@@ -1,5 +1,5 @@
 from random import *
-secret_words = [["h","e","l","l","o"],["b","y","e"],["t","e","s","t"],["h","e","r","o"]]
+secret_words = [["h","e","l","l","o"],["b","y","e"],["t","e","s","t"],["h","e","r","o"],["t","e","c","h","k","i","d"]]
 while True:
     i=randint(1,len(secret_words)-1)
     secret_word= secret_words[i]
