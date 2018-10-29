@@ -6,8 +6,10 @@ while True:
     shuffled_word= sample(secret_word,len(secret_word))
     print(*(shuffled_word),sep=" | ")
     guess_word=input("guess the word ")
+    count=1
     while list(guess_word) != (secret_word):
         print("wrong")
         guess_word=input("guess the word")
-    print("good")
+        count += 1
+    print("good,you need ",count," times to guess" )
 
