@@ -19,5 +19,5 @@ for question in quiz:
         print("good job!")
         count_right_answer += 1
     else:
-        print("no,boy:))")
+        print("slap yourself,please!))")
 print("your result:",count_right_answer,"of",len(quiz),)
