@@ -13,3 +13,4 @@ for i in str_list:
                 print(i, str_list.count(i), sep=": ")
                 k.append(i)
                 break
+print(k)
