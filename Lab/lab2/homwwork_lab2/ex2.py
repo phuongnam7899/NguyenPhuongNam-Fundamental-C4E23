@@ -26,5 +26,7 @@ for tr in tr_list:
                 rows["Quý 2-2017"]=td_list[i].string.strip()
             elif i==4:
                 rows["Quý 3-2017"]=td_list[i].string.strip()
-    table_full.append(rows)
+    print(rows)
+    if rows != {}:
+        table_full.append(rows)
 pyexcel.save_as(records=table_full,dest_file_name="Kết quả hoạt động kinh doanh công ty cổ phần sữa Việt Nam.xlsx")
