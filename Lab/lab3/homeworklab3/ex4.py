@@ -1,4 +1,4 @@
-from ex_1_2 import draw_square
+from ex12357911 import draw_square
 from turtle import *
 speed(0)
 for i in range(30):

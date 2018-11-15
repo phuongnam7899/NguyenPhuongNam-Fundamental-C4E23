@@ -1,4 +1,4 @@
-from ex_1_2 import draw_star
+from ex12357911 import draw_star
 from turtle import *
 speed(0)
 color('blue')
