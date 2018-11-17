@@ -9,23 +9,20 @@ def generate_quiz():
     error= randint(-1,1)
     result = eval(x,op,y) + error
     return [x,y,op,result]
-    print()
     # Hint: Return [x, y, op, result]
     # return [0, 0, '@@', 12]
 
 def check_answer(x, y, op,result, user_choice):
     if user_choice == True:
-        if eval(x,op,y) == generate_quiz()[3]:
-            return user_choice
+        if eval(x,op,y) == result:
+            return True
         else:
-            user_choice = False
-            return user_choice
+            return False
 
-    else:
-        if eval(x,op,y) == generate_quiz()[3]:
-            return user_choice
+    elif user_choice == False:
+        if eval(x,op,y) != result:
+            return True
         else:
-            user_choice = True
-            return user_choice
+            return False
           
     
