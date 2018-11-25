@@ -3,6 +3,7 @@ from random import choice
 gmail= GMail("nguyenphuongnam7899@gmail.com","namyeuthanh2503")
 
 sickness_list=["mu","diec","cam"]
+
 for i in range(5):
     template = '''<p>chao sep,</p>
 <p>hom nay em ngu lam,bac si khong noi gi voi em</p>
