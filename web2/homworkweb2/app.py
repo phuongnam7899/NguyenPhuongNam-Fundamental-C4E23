@@ -1,11 +1,15 @@
 import mlab
 from river import River
+
 mlab.connect()
+
+
 #1
 print("Rivers in Africa continent:")
 africa_rivers = River.objects(continent="Africa")
 for river in africa_rivers:
     print(river.name)
+
 
 #2
 print("River in S.America with length less than 1000km:")
