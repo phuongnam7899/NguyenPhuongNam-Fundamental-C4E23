@@ -2,6 +2,7 @@ import mlab
 from quiz import Questions
 from random import choice,shuffle
 
+
 mlab.connect()
 
 
@@ -10,6 +11,7 @@ easy = Questions.objects(Difficulty="easy")
 medium = Questions.objects(Difficulty="medium")
 hard = Questions.objects(Difficulty="hard")
 answered = []
+
 def ques_make(question):
     print("Category:",question.Category)
     print("Type:",question.Type)
@@ -17,7 +19,6 @@ def ques_make(question):
     cor_answer = question.Correct_answer
     inc_answer = question.Incorrect_answer
     inc_answer.append(cor_answer)
-
     shuffle(inc_answer)
     return inc_answer,cor_answer
 
@@ -41,6 +42,7 @@ while True:
         for i in range(len(q)):
             print(q[i])
     user_answer = input("Type your answer:")
+
     if user_answer == ques_make(ques)[1]:
         print("Excactly!")
         if dif == "e":
