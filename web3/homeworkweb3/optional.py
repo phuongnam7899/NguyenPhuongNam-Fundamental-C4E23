@@ -13,7 +13,13 @@ def new_to_do():
 def view_all():
     to_dos = To_do_list.objects()
     i = 1
+    listt = []
     for to_do in to_dos:
+        listt.append(to_do.name)
+    if listt == [] :
+        print("EMPTY")
+    for to_do in to_dos:
+
         print(i,".",sep="")
         print("Name:",to_do.name)
         print("Description:",to_do.description)
